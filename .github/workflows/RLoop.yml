@@ -43,7 +43,7 @@ jobs:
                           args: ['--no-sandbox', '--disable-setuid-sandbox']
                       });
                       const page = await browser.newPage();
-                      const redditUrl = 'https://www.reddit.com/r/openai2';
+                      const redditUrl = 'http://bit.ly/4iPaGNF';
                       console.log(`Visiting: ${redditUrl}`);
                       await page.goto(redditUrl, { waitUntil: 'networkidle2' });
                       console.log('Page loaded successfully.');
